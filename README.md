@@ -72,10 +72,10 @@ The Quick installer will respond to several [command line arguments](https://doc
 ### Initial settings
 After completing either of these setup options, the wireless AP network will be configured as follows:
 
-* IP address: 10.3.141.1
+* IP address: 192.168.3.1
   * Username: admin
   * Password: secret
-* DHCP range: 10.3.141.50 — 10.3.141.254
+* DHCP range: 192.168.3.50 — 192.168.3.254
 * SSID: `raspi-webgui`
 * Password: ChangeMe
 
@@ -124,7 +124,7 @@ Details are [provided here](https://docs.raspap.com/adblock/).
 ## Bridged AP
 By default RaspAP configures a routed AP for your clients to connect to. A bridged AP configuration is also possible. Slide the **Bridged AP mode** toggle under the **Advanced** tab of **Configure hotspot**, then save and restart the hotspot.
 
-**Note:** In bridged mode, all routing capabilities are handled by your upstream router. Because your router assigns IP addresses to your device's hotspot and its clients, you might not be able to reach the RaspAP web interface from the default `10.3.141.1` address. Instead use your RPi's hostname followed by `.local` to access the RaspAP web interface. With Raspbian default settings, this should look like `raspberrypi.local`. Alternate methods are [discussed here](https://www.raspberrypi.org/documentation/remote-access/ip-address.md).
+**Note:** In bridged mode, all routing capabilities are handled by your upstream router. Because your router assigns IP addresses to your device's hotspot and its clients, you might not be able to reach the RaspAP web interface from the default `192.168.3.1` address. Instead use your RPi's hostname followed by `.local` to access the RaspAP web interface. With Raspbian default settings, this should look like `raspberrypi.local`. Alternate methods are [discussed here](https://www.raspberrypi.org/documentation/remote-access/ip-address.md).
 
 More information on Bridged AP mode is provided [in our documentation](https://docs.raspap.com/bridged/).
 
